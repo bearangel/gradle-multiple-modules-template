@@ -16,8 +16,10 @@ extra["springCloudAlibabaVersion"] = "2022.0.0.0-RC2"
 
 
 repositories {
-    mavenCentral()
     maven { url = uri("https://maven.aliyun.com/repository/public") }
+    maven { url = uri("https://maven.aliyun.com/repository/central") }
+    mavenLocal()
+    mavenCentral()
 }
 
 //顶层目录不参与springboot构建
